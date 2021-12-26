@@ -11,5 +11,10 @@ public class LinearSearch() {
         return i;
       }
       return -1;
+    }
+  }
+  
+  public static int search () {
+    
   }
 }
