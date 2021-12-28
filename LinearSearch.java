@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class LinearSearch() {
   /**
   * Searches for int target in int[] array and returns the index it is found at, if not found, then return -1.
@@ -10,11 +12,16 @@ public class LinearSearch() {
       if (array[i] == target) {
         return i;
       }
-      return -1;
     }
+    return -1;
   }
   
-  public static int search () {
-    
+  public static int search (ArrayList <Integer> array, int target) {
+    for (int i = 0; i < array.size(); i++) {
+      if (array.get(i) == target) {
+        return i;
+      }
+    }
+    return -1;
   }
 }
